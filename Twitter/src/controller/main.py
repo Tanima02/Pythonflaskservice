@@ -33,7 +33,7 @@ def add_user():
     accountname = request.json["accountname"]
     userserv = Userservice()
     id = userserv.add_user(username, password,accountname)
-    return (f"User created with id->{id}")
+    return (f"User created with id1->{id}")
 
 
 @app.route("/tweet/add_tweet", methods=["POST"])
